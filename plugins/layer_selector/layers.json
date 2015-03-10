@@ -1,0 +1,51 @@
+[
+	{
+        "agsSource": {
+            "url": "http://services.coastalresilience.org:6080/arcgis/rest/services",
+            "folderTitle": "Coastal Resilience (National)",
+            "folders": [
+				{
+                    "url": "http://services.coastalresilience.org:6080/arcgis/rest/services/US",
+					"name": "",
+					"groupFolder": "Coastal Resilience (National)/Social_and_Economic",
+					"groupAsService": true,
+					"description": "The Social and Economic map service features data concerning the social vulnerability of coastal communities and indicators of local dependence on coastal natural resources. A brief description appears when you click on each layer.",
+                    "services": [
+						{ "name": "Population", "displayName": "Population", "type":"tiled", "opacity": 0.75 },
+						{ "name": "Population_Density", "displayName": "Population Density", "type":"tiled", "opacity": 0.75 },
+						{ "name": "Children_Under_5", "displayName": "Children Under 5", "type":"tiled", "opacity": 0.75 },
+						{ "name": "Children_Under_5_Percentage", "displayName": "Children Under 5 (% of total pop)", "type":"tiled", "opacity": 0.75 },
+						{ "name": "People_Over_65", "displayName": "People Over 65", "type":"tiled", "opacity": 0.75 },
+						{ "name": "People_Over_65_Percentage", "displayName": "People Over 65 (% of total pop)", "type":"tiled", "opacity": 0.75 },
+						{ "name": "Families_in_Poverty", "displayName": "Families in Poverty", "type":"tiled", "opacity": 0.75 },
+						{ "name": "Families_in_Poverty_Percentage", "displayName": "Families in Poverty (% of total families)", "type":"tiled", "opacity": 0.75 },
+						{ "name": "Median_Owner_Occupied_Home_Value", "displayName": "Median Owner-Occupied Home Value (1,000s of USD)", "type":"tiled", "opacity": 0.75 }
+                    ]
+                }
+            ]
+        }
+    },
+	{
+        "agsSource": {
+            "url": "http://olga.er.usgs.gov/stpgis/rest/services",
+            "folderTitle": "USGS",
+            "folders": [
+                {
+                    "url": "http://coastalmap.marine.usgs.gov/rest/services",
+					"name": "National",
+					"displayName": "National Assessment of Shoreline Change",
+                    "services": [
+						{ "name": "slc_HistoricShoreline", "displayName": "Historic Shorelines by State", "type":"dynamic", "opacity": 1
+						},
+						{ "name": "slc_LongTerm", "displayName": "Long-term Shoreline Change (m/yr)", "type":"dynamic", "opacity": 1,
+						"showLayers": []
+						},
+						{ "name": "slc_ShortTerm", "displayName": "Short-term Shoreline Change (m/yr)", "type":"dynamic", "opacity": 1,
+						"showLayers": [], "visibleLayerIds": [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80]
+						}
+					]
+				}
+            ]
+        }
+    }
+]
