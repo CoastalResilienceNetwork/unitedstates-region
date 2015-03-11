@@ -6,7 +6,7 @@
         },
 	    {
 	    	"repo": "explorer",
-            "name": "riskexplorer"
+            "name": "risk_explorer"
         }
     ]
 }
