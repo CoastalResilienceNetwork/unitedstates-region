@@ -1,11 +1,11 @@
 [
 	{
         "agsSource": {
-            "url": "http://services.coastalresilience.org:6080/arcgis/rest/services",
+            "url": "http://services.coastalresilience.org/arcgis/rest/services",
             "folderTitle": "Coastal Resilience (National)",
             "folders": [
 				{
-                    "url": "http://services.coastalresilience.org:6080/arcgis/rest/services/US",
+                    "url": "http://services.coastalresilience.org/arcgis/rest/services/US",
 					"name": "",
 					"groupFolder": "Coastal Resilience (National)/Social_and_Economic",
 					"groupAsService": true,
