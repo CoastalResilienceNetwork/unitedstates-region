@@ -5,7 +5,7 @@
             "folderTitle": "Coastal Resilience (National)",
             "folders": [
 				{
-                    "url": "http://dev.services2.coastalresilience.org/arcgis/rest/services/US",
+                    "url": "http://services.coastalresilience.org/arcgis/rest/services/US",
 					"name": "",
 					"groupFolder": "Coastal Resilience (National)/Social_and_Economic",
 					"groupAsService": true,
