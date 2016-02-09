@@ -20,7 +20,7 @@
 						{ "name": "Families_in_Poverty", "displayName": "Families in Poverty", "type":"tiled", "opacity": 0.75 },
 						{ "name": "Families_in_Poverty_Percentage", "displayName": "Families in Poverty (% of total families)", "type":"tiled", "opacity": 0.75 },
 						{ "name": "Median_Owner_Occupied_Home_Value", "displayName": "Median Owner-Occupied Home Value (1,000s of USD)", "type":"tiled", "opacity": 0.75 }
-					]
+                    ]
 				}
             ]
         }
