@@ -1,7 +1,7 @@
 [
 	{
         "agsSource": {
-            "url": "http://services.coastalresilience.org/arcgis/rest/services",
+            "url": "http://dev.services2.coastalresilience.org/arcgis/rest/services",
             "folderTitle": "Coastal Resilience (National)",
             "folders": [
 				{
