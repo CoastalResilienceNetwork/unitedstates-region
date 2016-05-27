@@ -1,16 +1,16 @@
 {
     "plugins": [
         {
-            "repo": "multiSelect",
-            "name": "flood_slr"
-        },
-	    {
 	    	"repo": "explorer",
             "name": "risk_explorer"
-                                  },
+         },
     {
       "repo": "map-tree",
       "name": "layer_selector"
+              },
+        {
+        "repo": "map-tree",
+        "name": "flood_slr"
         }
     ]
 }
