@@ -44,7 +44,6 @@
     "pluginOrder": [
         "layer_selector",
         "risk_explorer",
-		"flood_slr",
         "zoom_to",
         "measure",
         "legend_display",
