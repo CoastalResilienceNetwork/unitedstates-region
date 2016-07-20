@@ -52,12 +52,12 @@
                                         {
                                         "name": "1851 - 1859",
                                         "includeAllLayers": true  
-                                    }
-                                ]   
-                            }
-                        ]    
-                    },
-                    {
+                                        }
+                                    ]   
+                                }
+                            ]    
+                        },
+                        {
                         "name": "Massachusetts",
                         "includeAllLayers": [
                             {
@@ -136,24 +136,24 @@
                     {
                         "name": "Southern Delmarva",
                         "includeAllLayers": true
-                    },
-                    {
-                        "name": "Southeast Atlantic",
-                        "includeAllLayers": true
-                    },
-                    {
-                        "name": "Gulf of Mexico",
-                        "includeAllLayers": true
-                    },
-                    {
-                        "name": "California",
-                        "includeAllLayers": true
-                    },
-                    {
-                        "name": "Hawaii",
-                        "includeAllLayers": true
                     }
-                ]
+                ]   
+            },
+            {
+            "name": "Southeast Atlantic",
+            "includeAllLayers": true
+            },
+            {
+            "name": "Gulf of Mexico",
+            "includeAllLayers": true
+            },
+            {
+            "name": "California",
+            "includeAllLayers": true
+            },
+            {
+            "name": "Hawaii",
+            "includeAllLayers": true
             }
         ]
     },
