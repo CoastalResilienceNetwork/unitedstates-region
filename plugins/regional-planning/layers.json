@@ -1,0 +1,115 @@
+[
+    {
+        "displayName": "National Assessment of Shoreline Change",
+        "server": {
+            "type": "ags",
+            "layerType": "dynamic",
+            "url": "http://coastalmap.marine.usgs.gov/cmgp/rest/services/National"
+        },
+        "includeLayers": [
+            {
+                "server": {
+                    "name": "slc_HistoricShoreline"
+                },
+                "name": "Northeast Atlantic",
+                "displayName": "Northeast Atlantic",
+                "includeLayers": [
+                    {
+                        "name": "ME, NH, MA",
+                        "includeAllLayers": true
+                    },
+                    {
+                        "name": "Massachusetts",
+                        "includeAllLayers": true
+                    },
+                    {
+                        "name": "MA, RI",
+                        "includeAllLayers": true
+                    },
+                    {
+                        "name": "Long Island, NY",
+                        "includeAllLayers": true
+                    },
+                    {
+                        "name": "New Jersey North",
+                        "includeAllLayers": true
+                    },
+                    {
+                        "name": "New Jersey South",
+                        "includeAllLayers": true
+                    },
+                    {
+                        "name": "Northern Delmarva",
+                        "includeAllLayers": true
+                    },
+                    {
+                        "name": "Southern Delmarva",
+                        "includeAllLayers": true
+                    },
+                    {
+                        "name": "Southeast Atlantic",
+                        "includeAllLayers": true
+                    },
+                    {
+                        "name": "Gulf of Mexico",
+                        "includeAllLayers": true
+                    },
+                    {
+                        "name": "California",
+                        "includeAllLayers": true
+                    },
+                    {
+                        "name": "Hawaii",
+                        "includeAllLayers": true
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "displayName": "FEMA Coastal Flood Hazards",
+        "server": {
+            "type": "ags",
+            "layerType": "dynamic",
+            "url": "http://regions.services.femadata.com/arcgis/rest/services/FEMA_R4/"
+        },
+        "includeLayers": [
+            {
+                "server": {
+                    "name": "FEMA_Region_IV_Coastal_Flood_Loss_Atlas_CFLA_Version_301"
+                },
+                "name": "CFLA Data",
+                "displayName": "Coastal Flood Loss Atlas",
+                "includeLayers": [
+                    {
+                        "name": "Building Loss Ratio",
+                        "includeAllLayers": true
+                    },
+                    {
+                        "name": "Debris in Tons",
+                        "includeAllLayers": true
+                    },
+                    {
+                        "name": "Debris in Truck Loads",
+                        "includeAllLayers": true
+                    },
+                    {
+                        "name": "Short Term Shelter Population",
+                        "includeAllLayers": true
+                    },
+                    {
+                        "name": "Per Capita Loss",
+                        "includeAllLayers": true
+                    },
+                    {
+                        "name": "Maximum Surge Depth (Ft)",
+                        "includeAllLayers": true
+                    },
+                    {
+                        "name": "SLOSH Basin Counties"
+                    }
+                ]    
+            }
+        ]
+    }
+]

@@ -5,6 +5,10 @@
             "name": "risk_explorer"
          },
     {
+      "repo": "regional-planning",
+      "name": "regional-planning"
+          },
+    {
       "repo": "map-tree",
       "name": "layer_selector"
         }
