@@ -82,7 +82,24 @@
                 },
             "name": "Southeast Atlantic",
             "displayName": "Southeast Atlantic",
-            "includeAllLayers": true
+            "includeAllLayers": [
+                    {
+                        "name": "North Carolina",
+                        "includeAllLayers": true  
+                        },
+                        {
+                        "name": "South Carolina",
+                        "includeAllLayers": true   
+                        },
+                        {
+                        "name": "Georgia",
+                        "includeAllLayers": true
+                        },
+                        {
+                        "name": "Florida East",
+                        "includeAllLayers": true
+                    }
+                ]   
             }
         ]
     },
@@ -100,7 +117,28 @@
                 },
             "name": "Gulf of Mexico",
             "displayName": "Gulf of Mexico",
-            "includeAllLayers": true
+            "includeAllLayers": [
+                    {
+                        "name": "Florida West",
+                        "includeAllLayers": true  
+                        },
+                        {
+                        "name": "Alabama",
+                        "includeAllLayers": true   
+                        },
+                        {
+                        "name": "Mississippi",
+                        "includeAllLayers": true
+                        },
+                        {
+                        "name": "Louisiana",
+                        "includeAllLayers": true
+                        },
+                        {
+                        "name": "Texas",
+                        "includeAllLayers": true
+                    }
+                ]   
             }
         ]
     },
@@ -118,7 +156,20 @@
                 },
             "name": "California",
             "displayName": "California",
-            "includeAllLayers": true
+            "includeAllLayers": [
+                    {
+                        "name": "Northern California",
+                        "includeAllLayers": true  
+                        },
+                        {
+                        "name": "Central California",
+                        "includeAllLayers": true   
+                        },
+                        {
+                        "name": "Southern California",
+                        "includeAllLayers": true
+                    }
+                ]   
             }
         ]
     },
@@ -136,7 +187,20 @@
                 },
             "name": "Hawaii",
             "displayName": "Hawaii",
-            "includeAllLayers": true
+            "includeAllLayers": [
+                    {
+                        "name": "Kauai Island",
+                        "includeAllLayers": true  
+                        },
+                        {
+                        "name": "Oahu Island",
+                        "includeAllLayers": true   
+                        },
+                        {
+                        "name": "Maui Island",
+                        "includeAllLayers": true
+                    }
+                ]   
             }
         ]
     },
