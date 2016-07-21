@@ -63,8 +63,6 @@
                         {
                         "name": "Southern Delmarva",
                         "includeAllLayers": true
-                    }
-                ]   
             },
             {
             "name": "Southeast Atlantic",
@@ -84,9 +82,7 @@
                         },
                         {
                         "name": "Florida East",
-                        "includeAllLayers": true
-                    }
-                ]   
+                        "includeAllLayers": true 
             },
             {
             "name": "Gulf of Mexico",
@@ -110,9 +106,7 @@
                         },
                         {
                         "name": "Texas",
-                        "includeAllLayers": true
-                    }
-                ]   
+                        "includeAllLayers": true 
             },
             {
             "name": "California",
@@ -128,9 +122,7 @@
                         },
                         {
                         "name": "Southern California",
-                        "includeAllLayers": true
-                    }
-                ]   
+                        "includeAllLayers": true  
             },
             {
             "name": "Hawaii",
