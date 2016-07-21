@@ -5,7 +5,7 @@
             "type": "ags",
             "layerType": "dynamic",
             "url": "http://dev.services2.coastalresilience.org/arcgis/rest/services/United_States/",
-            "name": "Global",
+            "name": "United_States",
             "reportGpUrl": "http://dev.services2.coastalresilience.org/arcgis/rest/services/DrawAndReport/getDrawAndReportDataMultiUnits/GPServer/getDrawAndReportDataMultiUnits",
             "reportDbPath": "coastalresilience.gdb" 
         },
