@@ -1,5 +1,23 @@
 [
     {
+        "displayName": "Coasts @ Risk, Boundaries & Habitats",
+        "server": {
+            "type": "ags",
+            "layerType": "dynamic",
+            "url": "http://dev.services2.coastalresilience.org/arcgis/rest/services/United_States/",
+            "name": "Global",
+            "reportGpUrl": "http://dev.services2.coastalresilience.org/arcgis/rest/services/DrawAndReport/getDrawAndReportDataMultiUnits/GPServer/getDrawAndReportDataMultiUnits",
+            "reportDbPath": "coastalresilience.gdb" 
+        },
+        "includeLayers": [
+            {
+                "name": "Social and Economic",
+                "displayName": "Social and Economic",
+                "includeAllLayers": true
+            }
+        ]
+    },
+    {
         "displayName": "National Assessment of Shoreline Change",
         "server": {
             "type": "ags",
