@@ -68,18 +68,22 @@
             },
             {
             "name": "Southeast Atlantic",
+            "displayName": "Southeast Atlantic",
             "includeAllLayers": true
             },
             {
             "name": "Gulf of Mexico",
+            "displayName": "Gulf of Mexico",
             "includeAllLayers": true
             },
             {
             "name": "California",
+            "displayName": "California",
             "includeAllLayers": true
             },
             {
             "name": "Hawaii",
+            "displayName": "Hawaii",
             "includeAllLayers": true
             }
         ]
