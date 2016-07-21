@@ -3,7 +3,7 @@
         "displayName": "US Census",
         "server": {
             "type": "ags",
-            "layerType": "dynamic",
+            "layerType": "",
             "url": "http://dev.services2.coastalresilience.org/arcgis/rest/services/United_States/",
             "name": "United_States",
             "reportGpUrl": "http://dev.services2.coastalresilience.org/arcgis/rest/services/DrawAndReport/getDrawAndReportDataMultiUnits/GPServer/getDrawAndReportDataMultiUnits",
@@ -65,23 +65,75 @@
                         "includeAllLayers": true
                     }
                 ]   
-            },
+            }
+        ]
+    },
+    {
+        "displayName": "National Assessment of Shoreline Change",
+        "server": {
+            "type": "ags",
+            "layerType": "dynamic",
+            "url": "http://coastalmap.marine.usgs.gov/cmgp/rest/services/National"
+        },
+        "includeLayers": [
             {
+                "server": {
+                    "name": "slc_HistoricShoreline"
+                },
             "name": "Southeast Atlantic",
             "displayName": "Southeast Atlantic",
             "includeAllLayers": true
-            },
+            }
+        ]
+    },
+    {
+        "displayName": "National Assessment of Shoreline Change",
+        "server": {
+            "type": "ags",
+            "layerType": "dynamic",
+            "url": "http://coastalmap.marine.usgs.gov/cmgp/rest/services/National"
+        },
+        "includeLayers": [
             {
+                "server": {
+                    "name": "slc_HistoricShoreline"
+                },
             "name": "Gulf of Mexico",
             "displayName": "Gulf of Mexico",
             "includeAllLayers": true
-            },
+            }
+        ]
+    },
+    {
+        "displayName": "National Assessment of Shoreline Change",
+        "server": {
+            "type": "ags",
+            "layerType": "dynamic",
+            "url": "http://coastalmap.marine.usgs.gov/cmgp/rest/services/National"
+        },
+        "includeLayers": [
             {
+                "server": {
+                    "name": "slc_HistoricShoreline"
+                },
             "name": "California",
             "displayName": "California",
             "includeAllLayers": true
-            },
+            }
+        ]
+    },
+    {
+        "displayName": "National Assessment of Shoreline Change",
+        "server": {
+            "type": "ags",
+            "layerType": "dynamic",
+            "url": "http://coastalmap.marine.usgs.gov/cmgp/rest/services/National"
+        },
+        "includeLayers": [
             {
+                "server": {
+                    "name": "slc_HistoricShoreline"
+                },
             "name": "Hawaii",
             "displayName": "Hawaii",
             "includeAllLayers": true
