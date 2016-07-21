@@ -1,5 +1,6 @@
 [
     {
+        "displayName": "US Census",
         "server": {
             "type": "ags",
             "layerType": "dynamic",
