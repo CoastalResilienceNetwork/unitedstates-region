@@ -3,7 +3,7 @@
         "displayName": "US Census",
         "server": {
             "type": "ags",
-            "layerType": "",
+            "layerType": "dynamic",
             "url": "http://dev.services2.coastalresilience.org/arcgis/rest/services/United_States/",
             "name": "United_States",
             "reportGpUrl": "http://dev.services2.coastalresilience.org/arcgis/rest/services/DrawAndReport/getDrawAndReportDataMultiUnits/GPServer/getDrawAndReportDataMultiUnits",
@@ -34,37 +34,144 @@
                 "includeLayers": [
                     {
                         "name": "ME, NH, MA",
-                        "includeAllLayers": true  
+                        "includeAllLayers": [
+                            {
+                                "name": "1994 - 2007",
+                                "includeAllLayers": true
+                                },
+                                {
+                                "name": "1945 - 1994",
+                                "includeAllLayers": true
+                                },
+                                {
+                                "name": "1914 - 1957",
+                                "includeAllLayers": [
+                                    {
+                                        "name": "1952 - 1955",
+                                        "includeAllLayers": true
+                                        },
+                                        {
+                                        "name": "1928 - 1944",
+                                        "includeAllLayers": true   
+                                        }
+                                    ]   
+                                },
+                                {
+                                "name": "1830 - 1913",
+                                "includeAllLayers": [
+                                    {
+                                        "name": "1910 - 1913",
+                                        "includeAllLayers": true
+                                        },
+                                        {
+                                        "name": "1860 - 1901",
+                                        "includeAllLayers": true   
+                                        },
+                                        {
+                                        "name": "1851 - 1859",
+                                        "includeAllLayers": true  
+                                        }
+                                    ]   
+                                }
+                            ]    
                         },
                         {
                         "name": "Massachusetts",
-                        "includeAllLayers": true   
-                        },
-                        {
+                        "includeAllLayers": [
+                            {
+                                "name": "Greater Boston MA",
+                                "includeAllLayers": [
+                                    {
+                                        "name": "1994 - 2000",
+                                        "includeAllLayers": true
+                                        },
+                                        {
+                                        "name": "1945 - 1994",
+                                        "includeAllLayers": true   
+                                        },
+                                        {
+                                        "name": "1914 - 1957",
+                                        "includeAllLayers": true 
+                                        }
+                                    ]   
+                                },
+                                {
+                                "name": "Cape Cod MA",
+                                "includeAllLayers": [
+                                    {
+                                        "name": "1994 - 2000",
+                                        "includeAllLayers": true
+                                        },
+                                        {
+                                        "name": "1970 - 1978",
+                                        "includeAllLayers": true   
+                                        },
+                                        {
+                                        "name": "1933 - 1954",
+                                        "includeAllLayers": true  
+                                        }
+                                    ]   
+                                },
+                                {
+                                "name": "Martha's Vineyard and Nantucket MA",
+                                "includeAllLayers": [
+                                    {
+                                        "name": "1994 - 2000",
+                                        "includeAllLayers": true
+                                        },
+                                        {
+                                        "name": "1978 - 1979",
+                                        "includeAllLayers": true   
+                                        },
+                                        {
+                                        "name": "1914 - 1957",
+                                        "includeAllLayers": true  
+                                    }
+                                ]   
+                            }
+                        ]    
+                    },
+                    {
                         "name": "MA, RI",
                         "includeAllLayers": true
-                        },
-                        {
+                    },
+                    {
                         "name": "Long Island, NY",
                         "includeAllLayers": true
-                        },
-                        {
+                    },
+                    {
                         "name": "New Jersey North",
                         "includeAllLayers": true
-                        },
-                        {
+                    },
+                    {
                         "name": "New Jersey South",
                         "includeAllLayers": true
-                        },
-                        {
+                    },
+                    {
                         "name": "Northern Delmarva",
                         "includeAllLayers": true
-                        },
-                        {
+                    },
+                    {
                         "name": "Southern Delmarva",
                         "includeAllLayers": true
                     }
                 ]   
+            },
+            {
+            "name": "Southeast Atlantic",
+            "includeAllLayers": true
+            },
+            {
+            "name": "Gulf of Mexico",
+            "includeAllLayers": true
+            },
+            {
+            "name": "California",
+            "includeAllLayers": true
+            },
+            {
+            "name": "Hawaii",
+            "includeAllLayers": true
             }
         ]
     },
