@@ -4,7 +4,7 @@
         "server": {
             "type": "ags",
             "layerType": "dynamic",
-            "url": "http://dev.services2.coastalresilience.org/arcgis/rest/services/US/United_States/MapServer",
+            "url": "http://dev.services2.coastalresilience.org/arcgis/rest/services/US/",
             "name": "United_States",
             "reportGpUrl": "http://dev.services2.coastalresilience.org/arcgis/rest/services/DrawAndReport/getDrawAndReportDataMultiUnits/GPServer/getDrawAndReportDataMultiUnits",
             "reportDbPath": "coastalresilience.gdb" 
@@ -12,213 +12,1119 @@
         "includeLayers": [
             {
                 "name": "Social and Economic",
-                "displayName": "Social and Economic",
                 "includeAllLayers": true
             }
         ]
     },
-    {
+	{
         "displayName": "National Assessment of Shoreline Change",
         "server": {
             "type": "ags",
             "layerType": "dynamic",
-            "url": "http://coastalmap.marine.usgs.gov/cmgp/rest/services/National"
+            "url": "http://coastalmap.marine.usgs.gov/cmgp/rest/services/National/",
+			"name" : "slc_HistoricShoreline"
         },
-        "includeLayers": [
-            {
-                "server": {
-                    "name": "slc_HistoricShoreline"
-                },
-                "name": "Northeast Atlantic",
-                "displayName": "Northeast Atlantic",
-                "includeLayers": [
-                    {
-                        "name": "ME, NH, MA",
-                        "includeAllLayers": [
-                            {
-                                "name": "1994 - 2007",
-                                "includeAllLayers": true
-                                },
-                                {
-                                "name": "1945 - 1994",
-                                "includeAllLayers": true
-                                },
-                                {
-                                "name": "1914 - 1957",
-                                "includeAllLayers": [
-                                    {
-                                        "name": "1952 - 1955",
-                                        "includeAllLayers": true
-                                        },
-                                        {
-                                        "name": "1928 - 1944",
-                                        "includeAllLayers": true   
-                                        }
-                                    ]   
-                                },
-                                {
-                                "name": "1830 - 1913",
-                                "includeAllLayers": [
-                                    {
-                                        "name": "1910 - 1913",
-                                        "includeAllLayers": true
-                                        },
-                                        {
-                                        "name": "1860 - 1901",
-                                        "includeAllLayers": true   
-                                        },
-                                        {
-                                        "name": "1851 - 1859",
-                                        "includeAllLayers": true  
-                                        }
-                                    ]   
-                                }
-                            ]    
-                        },
-                        {
-                        "name": "Massachusetts",
-                        "includeAllLayers": [
-                            {
-                                "name": "Greater Boston MA",
-                                "includeAllLayers": [
-                                    {
-                                        "name": "1994 - 2000",
-                                        "includeAllLayers": true
-                                        },
-                                        {
-                                        "name": "1945 - 1994",
-                                        "includeAllLayers": true   
-                                        },
-                                        {
-                                        "name": "1914 - 1957",
-                                        "includeAllLayers": true 
-                                        }
-                                    ]   
-                                },
-                                {
-                                "name": "Cape Cod MA",
-                                "includeAllLayers": [
-                                    {
-                                        "name": "1994 - 2000",
-                                        "includeAllLayers": true
-                                        },
-                                        {
-                                        "name": "1970 - 1978",
-                                        "includeAllLayers": true   
-                                        },
-                                        {
-                                        "name": "1933 - 1954",
-                                        "includeAllLayers": true  
-                                        }
-                                    ]   
-                                },
-                                {
-                                "name": "Martha's Vineyard and Nantucket MA",
-                                "includeAllLayers": [
-                                    {
-                                        "name": "1994 - 2000",
-                                        "includeAllLayers": true
-                                        },
-                                        {
-                                        "name": "1978 - 1979",
-                                        "includeAllLayers": true   
-                                        },
-                                        {
-                                        "name": "1914 - 1957",
-                                        "includeAllLayers": true  
-                                    }
-                                ]   
-                            }
-                        ]    
-                    },
-                    {
-                        "name": "MA, RI",
-                        "includeAllLayers": true
-                    },
-                    {
-                        "name": "Long Island, NY",
-                        "includeAllLayers": true
-                    },
-                    {
-                        "name": "New Jersey North",
-                        "includeAllLayers": true
-                    },
-                    {
-                        "name": "New Jersey South",
-                        "includeAllLayers": true
-                    },
-                    {
-                        "name": "Northern Delmarva",
-                        "includeAllLayers": true
-                    },
-                    {
-                        "name": "Southern Delmarva",
-                        "includeAllLayers": true
-                    }
-                ]   
-            },
-            {
-            "name": "Southeast Atlantic",
-            "includeAllLayers": true
-            },
-            {
-            "name": "Gulf of Mexico",
-            "includeAllLayers": true
-            },
-            {
-            "name": "California",
-            "includeAllLayers": true
-            },
-            {
-            "name": "Hawaii",
-            "includeAllLayers": true
-            }
-        ]
-    },
+		"includeLayers" : [
+			{
+				"name" : "Northeast Atlantic",
+				"includeLayers" : [
+					{
+						"name" : "ME, NH, MA",
+						"includeLayers" : [
+							{
+								"name" : "Northern New England shoreline 2000"
+							},
+							{
+								"name" : "Northern New England shoreline 1994"
+							},
+							{
+								"name" : "Northern New England shoreline 1979"
+							},
+							{
+								"name" : "Northern New England shoreline 1978"
+							},
+							{
+								"name" : "Northern New England shoreline 1955"
+							},
+							{
+								"name" : "Northern New England shoreline 1953"
+							},
+							{
+								"name" : "Northern New England shoreline 1952"
+							},
+							{
+								"name" : "Northern New England shoreline 1944"
+							},
+							{
+								"name" : "Northern New England shoreline 1943"
+							},
+							{
+								"name" : "Northern New England shoreline 1942"
+							},
+							{
+								"name" : "Northern New England shoreline 1941"
+							},
+							{
+								"name" : "Northern New England shoreline 1928"
+							},
+							{
+								"name" : "Northern New England shoreline 1913"
+							},
+							{
+								"name" : "Northern New England shoreline 1912"
+							},
+							{
+								"name" : "Northern New England shoreline 1911"
+							},
+							{
+								"name" : "Northern New England shoreline 1910"
+							},
+							{
+								"name" : "Northern New England shoreline 1901"
+							},
+							{
+								"name" : "Northern New England shoreline 1871"
+							},
+							{
+								"name" : "Northern New England shoreline 1870"
+							},
+							{
+								"name" : "Northern New England shoreline 1769"
+							},
+							{
+								"name" : "Northern New England shoreline 1867"
+							},
+							{
+								"name" : "Northern New England shoreline 1866"
+							},
+							{
+								"name" : "Northern New England shoreline 1864"
+							},
+							{
+								"name" : "Northern New England shoreline 1862"
+							},
+							{
+								"name" : "Northern New England shoreline 1860"
+							},
+							{
+								"name" : "Northern New England shoreline 1859"
+							},
+							{
+								"name" : "Northern New England shoreline 1858"
+							},
+							{
+								"name" : "Northern New England shoreline 1857"
+							},
+							{
+								"name" : "Northern New England shoreline 1856"
+							},
+							{
+								"name" : "Northern New England shoreline 1855"
+							},
+							{
+								"name" : "Northern New England shoreline 1854"
+							},
+							{
+								"name" : "Northern New England shoreline 1853"
+							},
+							{
+								"name" : "Northern New England shoreline 1852"
+							},
+							{
+								"name" : "Northern New England shoreline 1851"
+							},
+							{
+								"name" : "Northern New England shoreline 1850"
+							}
+						]
+					},
+					{
+						"name" : "Massachusetts",
+						"includeLayers" : [
+							{
+								"name" : "Greater Boston MA",
+								"includeLayers" : [
+									{
+										"name" : "Greater Boston shoreline 2000"
+									},
+									{
+										"name" : "Greater Boston shoreline 1994"
+									},
+									{
+										"name" : "Greater Boston shoreline 1978"
+									},
+									{
+										"name" : "Greater Boston shoreline 1960"
+									},
+									{
+										"name" : "Greater Boston shoreline 1954"
+									},
+									{
+										"name" : "Greater Boston shoreline 1952"
+									},
+									{
+										"name" : "Greater Boston shoreline 1951"
+									},
+									{
+										"name" : "Greater Boston shoreline 1950"
+									},
+									{
+										"name" : "Greater Boston shoreline 1938"
+									},
+									{
+										"name" : "Greater Boston shoreline 1934"
+									},
+									{
+										"name" : "Greater Boston shoreline 1928"
+									},
+									{
+										"name" : "Greater Boston shoreline 1924"
+									},
+									{
+										"name" : "Greater Boston shoreline 1919"
+									},
+									{
+										"name" : "Greater Boston shoreline 1910"
+									},
+									{
+										"name" : "Greater Boston shoreline 1909"
+									},
+									{
+										"name" : "Greater Boston shoreline 1895"
+									},
+									{
+										"name" : "Greater Boston shoreline 1894"
+									},
+									{
+										"name" : "Greater Boston shoreline 1893"
+									},
+									{
+										"name" : "Greater Boston shoreline 1867"
+									},
+									{
+										"name" : "Greater Boston shoreline 1866"
+									},
+									{
+										"name" : "Greater Boston shoreline 1861"
+									},
+									{
+										"name" : "Greater Boston shoreline 1860"
+									},
+									{
+										"name" : "Greater Boston shoreline 1858"
+									},
+									{
+										"name" : "Greater Boston shoreline 1853"
+									},
+									{
+										"name" : "Greater Boston shoreline 1851"
+									},
+									{
+										"name" : "Greater Boston shoreline 1849"
+									},
+									{
+										"name" : "Greater Boston shoreline 1848"
+									},
+									{
+										"name" : "Greater Boston shoreline 1847"
+									}						
+								]
+							},
+							{
+								"name" : "Cape Cod MA",
+								"includeLayers" : [
+									{
+										"name" : "Cape Cod shoreline 2000"
+									},
+									{
+										"name" : "Cape Cod shoreline 1994"
+									},
+									{
+										"name" : "Cape Cod shoreline 1978"
+									},
+									{
+										"name" : "Cape Cod shoreline 1970"
+									},
+									{
+										"name" : "Cape Cod shoreline 1954"
+									},
+									{
+										"name" : "Cape Cod shoreline 1951"
+									},
+									{
+										"name" : "Cape Cod shoreline 1943"
+									},
+									{
+										"name" : "Cape Cod shoreline 1938"
+									},
+									{
+										"name" : "Cape Cod shoreline 1933"
+									},
+									{
+										"name" : "Cape Cod shoreline 1909"
+									},
+									{
+										"name" : "Cape Cod shoreline 1888"
+									},
+									{
+										"name" : "Cape Cod shoreline 1886"
+									},
+									{
+										"name" : "Cape Cod shoreline 1868"
+									},
+									{
+										"name" : "Cape Cod shoreline 1856"
+									},
+									{
+										"name" : "Cape Cod shoreline 1848"
+									}					
+								]
+							},
+							{
+								"name" : "Martha's Vineyard and Nantucket MA",
+								"includeLayers" : [
+									{
+										"name" : "Vineyard, Nantucket shoreline 2000"
+									},
+									{
+										"name" : "Vineyard, Nantucket shoreline 1994"
+									},
+									{
+										"name" : "Vineyard, Nantucket shoreline 1979"
+									},
+									{
+										"name" : "Vineyard, Nantucket shoreline 1978"
+									},
+									{
+										"name" : "Vineyard, Nantucket shoreline 1955"
+									},
+									{
+										"name" : "Vineyard, Nantucket shoreline 1897"
+									},
+									{
+										"name" : "Vineyard, Nantucket shoreline 1888"
+									},
+									{
+										"name" : "Vineyard, Nantucket shoreline 1887"
+									},
+									{
+										"name" : "Vineyard, Nantucket shoreline 1846"
+									},
+									{
+										"name" : "Vineyard, Nantucket shoreline 1845"
+									}									
+								]
+							}
+						]
+					},
+					{
+						"name" : "MA, RI",
+						"includeLayers" : [
+							{
+								"name" : "Southern New England shoreline 2006"
+							},
+							{
+								"name" : "Southern New England shoreline 2004"
+							},
+							{
+								"name" : "Southern New England shoreline 2003"
+							},
+							{
+								"name" : "Southern New England shoreline 2000"
+							},
+							{
+								"name" : "Southern New England shoreline 1997"
+							},
+							{
+								"name" : "Southern New England shoreline 1994"
+							},
+							{
+								"name" : "Southern New England shoreline 1992"
+							},
+							{
+								"name" : "Southern New England shoreline 1985"
+							},
+							{
+								"name" : "Southern New England shoreline 1978"
+							},
+							{
+								"name" : "Southern New England shoreline 1975"
+							},
+							{
+								"name" : "Southern New England shoreline 1963"
+							},
+							{
+								"name" : "Southern New England shoreline 1956"
+							},
+							{
+								"name" : "Southern New England shoreline 1954"
+							},
+							{
+								"name" : "Southern New England shoreline 1952"
+							},
+							{
+								"name" : "Southern New England shoreline 1951"
+							},
+							{
+								"name" : "Southern New England shoreline 1948"
+							},
+							{
+								"name" : "Southern New England shoreline 1939"
+							},
+							{
+								"name" : "Southern New England shoreline 1934"
+							},
+							{
+								"name" : "Southern New England shoreline 1895"
+							},
+							{
+								"name" : "Southern New England shoreline 1886"
+							},
+							{
+								"name" : "Southern New England shoreline 1883"
+							},
+							{
+								"name" : "Southern New England shoreline 1873"
+							},
+							{
+								"name" : "Southern New England shoreline 1872"
+							},
+							{
+								"name" : "Southern New England shoreline 1871"
+							},
+							{
+								"name" : "Southern New England shoreline 1870"
+							},
+							{
+								"name" : "Southern New England shoreline 1869"
+							},
+							{
+								"name" : "Southern New England shoreline 1844"
+							}						
+						]
+					},
+					{
+						"name" : "Long Island NY",
+						"includeLayers" : [
+							{
+								"name" : "Long Island, NY shoreline 2007"
+							},
+							{
+								"name" : "Long Island, NY shoreline 2006"
+							},
+							{
+								"name" : "Long Island, NY shoreline 2005"
+							},
+							{
+								"name" : "Long Island, NY shoreline 2002"
+							},
+							{
+								"name" : "Long Island, NY shoreline 2001"
+							},
+							{
+								"name" : "Long Island, NY shoreline 2000"
+							},
+							{
+								"name" : "Long Island, NY shoreline 1999"
+							},
+							{
+								"name" : "Long Island, NY shoreline 1994"
+							},
+							{
+								"name" : "Long Island, NY shoreline 1991"
+							},
+							{
+								"name" : "Long Island, NY shoreline 1988"
+							},
+							{
+								"name" : "Long Island, NY shoreline 1983"
+							},
+							{
+								"name" : "Long Island, NY shoreline 1979"
+							},
+							{
+								"name" : "Long Island, NY shoreline 1970"
+							},
+							{
+								"name" : "Long Island, NY shoreline 1962"
+							},
+							{
+								"name" : "Long Island, NY shoreline 1960"
+							},
+							{
+								"name" : "Long Island, NY shoreline 1950"
+							},
+							{
+								"name" : "Long Island, NY shoreline 1947"
+							},
+							{
+								"name" : "Long Island, NY shoreline 1938"
+							},
+							{
+								"name" : "Long Island, NY shoreline 1934"
+							},
+							{
+								"name" : "Long Island, NY shoreline 1933"
+							},
+							{
+								"name" : "Long Island, NY shoreline 1927"
+							},
+							{
+								"name" : "Long Island, NY shoreline 1926"
+							},
+							{
+								"name" : "Long Island, NY shoreline 1914"
+							},
+							{
+								"name" : "Long Island, NY shoreline 1910"
+							},
+							{
+								"name" : "Long Island, NY shoreline 1909"
+							},
+							{
+								"name" : "Long Island, NY shoreline 1908"
+							},
+							{
+								"name" : "Long Island, NY shoreline 1902"
+							},
+							{
+								"name" : "Long Island, NY shoreline 1892"
+							},
+							{
+								"name" : "Long Island, NY shoreline 1891"
+							},
+							{
+								"name" : "Long Island, NY shoreline 1890"
+							},
+							{
+								"name" : "Long Island, NY shoreline 1887"
+							},
+							{
+								"name" : "Long Island, NY shoreline 1885"
+							},
+							{
+								"name" : "Long Island, NY shoreline 1880"
+							},
+							{
+								"name" : "Long Island, NY shoreline 1878"
+							},
+							{
+								"name" : "Long Island, NY shoreline 1877"
+							},
+							{
+								"name" : "Long Island, NY shoreline 1873"
+							},
+							{
+								"name" : "Long Island, NY shoreline 1870"
+							},
+							{
+								"name" : "Long Island, NY shoreline 1835"
+							},
+							{
+								"name" : "Long Island, NY shoreline 1830"
+							}						
+						]
+					},
+					{
+						"name" : "New Jersey South",
+						"includeLayers" : [
+							{
+								"name" : "Southern NJ shoreline 2000"
+							},
+							{
+								"name" : "Southern NJ shoreline 1977"
+							},
+							{
+								"name" : "Southern NJ shoreline 1971"
+							},
+							{
+								"name" : "Southern NJ shoreline 1953"
+							},
+							{
+								"name" : "Southern NJ shoreline 1952"
+							},
+							{
+								"name" : "Southern NJ shoreline 1943"
+							},
+							{
+								"name" : "Southern NJ shoreline 1936"
+							},
+							{
+								"name" : "Southern NJ shoreline 1935"
+							},
+							{
+								"name" : "Southern NJ shoreline 1933"
+							},
+							{
+								"name" : "Southern NJ shoreline 1899"
+							},
+							{
+								"name" : "Southern NJ shoreline 1885"
+							},
+							{
+								"name" : "Southern NJ shoreline 1881"
+							},
+							{
+								"name" : "Southern NJ shoreline 1879"
+							},
+							{
+								"name" : "Southern NJ shoreline 1871"
+							},
+							{
+								"name" : "Southern NJ shoreline 1866"
+							},
+							{
+								"name" : "Southern NJ shoreline 1852"
+							},
+							{
+								"name" : "Southern NJ shoreline 1842"
+							},
+							{
+								"name" : "Southern NJ shoreline 1841"
+							}						
+						]
+					},
+					{
+						"name" : "Northern Delmarva",
+						"includeLayers" : [
+							{
+								"name" : "Northern Delmarva shoreline 2000"
+							},
+							{
+								"name" : "Northern Delmarva shoreline 1997"
+							},
+							{
+								"name" : "Northern Delmarva shoreline 1989"
+							},
+							{
+								"name" : "Northern Delmarva shoreline 1980"
+							},
+							{
+								"name" : "Northern Delmarva shoreline 1979"
+							},
+							{
+								"name" : "Northern Delmarva shoreline 1976"
+							},
+							{
+								"name" : "Northern Delmarva shoreline 1970"
+							},
+							{
+								"name" : "Northern Delmarva shoreline 1969"
+							},
+							{
+								"name" : "Northern Delmarva shoreline 1962"
+							},
+							{
+								"name" : "Northern Delmarva shoreline 1961"
+							},
+							{
+								"name" : "Northern Delmarva shoreline 1943"
+							},
+							{
+								"name" : "Northern Delmarva shoreline 1942"
+							},
+							{
+								"name" : "Northern Delmarva shoreline 1933"
+							},
+							{
+								"name" : "Northern Delmarva shoreline 1929"
+							},
+							{
+								"name" : "Northern Delmarva shoreline 1915"
+							},
+							{
+								"name" : "Northern Delmarva shoreline 1908"
+							},
+							{
+								"name" : "Northern Delmarva shoreline 1903"
+							},
+							{
+								"name" : "Northern Delmarva shoreline 1882"
+							},
+							{
+								"name" : "Northern Delmarva shoreline 1859"
+							},
+							{
+								"name" : "Northern Delmarva shoreline 1850"
+							},
+							{
+								"name" : "Northern Delmarva shoreline 1849"
+							},
+							{
+								"name" : "Northern Delmarva shoreline 1845"
+							}						
+						]
+					},
+					{
+						"name" : "Southern Delmarva",
+						"includeLayers" : [
+							{
+								"name" : "Southern Delmarva shoreline 1997"
+							},
+							{
+								"name" : "Southern Delmarva shoreline 1980"
+							},
+							{
+								"name" : "Southern Delmarva shoreline 1979"
+							},
+							{
+								"name" : "Southern Delmarva shoreline 1967"
+							},
+							{
+								"name" : "Southern Delmarva shoreline 1962"
+							},
+							{
+								"name" : "Southern Delmarva shoreline 1953"
+							},
+							{
+								"name" : "Southern Delmarva shoreline 1944"
+							},
+							{
+								"name" : "Southern Delmarva shoreline 1943"
+							},
+							{
+								"name" : "Southern Delmarva shoreline 1942"
+							},
+							{
+								"name" : "Southern Delmarva shoreline 1934"
+							},
+							{
+								"name" : "Southern Delmarva shoreline 1933"
+							},
+							{
+								"name" : "Southern Delmarva shoreline 1925"
+							},
+							{
+								"name" : "Southern Delmarva shoreline 1921"
+							},
+							{
+								"name" : "Southern Delmarva shoreline 1919"
+							},
+							{
+								"name" : "Southern Delmarva shoreline 1916"
+							},
+							{
+								"name" : "Southern Delmarva shoreline 1915"
+							},
+							{
+								"name" : "Southern Delmarva shoreline 1911"
+							},
+							{
+								"name" : "Southern Delmarva shoreline 1910"
+							},
+							{
+								"name" : "Southern Delmarva shoreline 1905"
+							},
+							{
+								"name" : "Southern Delmarva shoreline 1888"
+							},
+							{
+								"name" : "Southern Delmarva shoreline 1887"
+							},
+							{
+								"name" : "Southern Delmarva shoreline 1871"
+							},
+							{
+								"name" : "Southern Delmarva shoreline 1870"
+							},
+							{
+								"name" : "Southern Delmarva shoreline 1859"
+							},
+							{
+								"name" : "Southern Delmarva shoreline 1858"
+							},
+							{
+								"name" : "Southern Delmarva shoreline 1855"
+							},
+							{
+								"name" : "Southern Delmarva shoreline 1853"
+							},
+							{
+								"name" : "Southern Delmarva shoreline 1852"
+							},
+							{
+								"name" : "Southern Delmarva shoreline 1851"
+							}						
+						]
+					}
+				]
+			},
+			{
+				"name" : "Southeast Atlantic",
+				"includeLayers" : [
+					{
+						"name" : "North Carolina",
+						"includeAllLayers" : true
+					},
+					{
+						"name" : "South Carolina",
+						"includeAllLayers" : true
+					},
+					{
+						"name" : "Georgia",
+						"includeAllLayers" : true
+					},
+					{
+						"name" : "Florida East",
+						"includeAllLayers" : true
+					}
+				]
+			},
+			{
+				"name" : "Gulf of Mexico",
+				"includeLayers" : [
+					{
+						"name" : "Florida West",
+						"includeAllLayers" : true
+					},
+					{
+						"name" : "Alabama",
+						"includeAllLayers" : true
+					},
+					{
+						"name" : "Mississippi",
+						"includeAllLayers" : true
+					},
+					{
+						"name" : "Louisiana",
+						"includeAllLayers" : true
+					},
+					{
+						"name" : "Texas",
+						"includeAllLayers" : true
+					}
+				]
+			},
+			{
+				"name" : "Northern Alaska",
+				"includeLayers" : [
+					{
+						"name" : "AK East Chukchi shorelines 2012"
+					},
+					{
+						"name" : "AK East Chukchi shorelines 2011"
+					},
+					{
+						"name" : "AK East Chukchi shorelines 2010"
+					},
+					{
+						"name" : "AK East Chukchi shorelines 2005"
+					},
+					{
+						"name" : "AK East Chukchi shorelines 1949"
+					},
+					{
+						"name" : "AK East Chukchi shorelines 1947"
+					},
+					{
+						"name" : "AK West Beaufort shorelines 2005"
+					},
+					{
+						"name" : "AK West Beaufort shorelines 2002"
+					},
+					{
+						"name" : "AK West Beaufort shorelines 1947"
+					},
+					{
+						"name" : "AK Central Beaufort shorelines 2007"
+					},
+					{
+						"name" : "AK Central Beaufort shorelines 2006"
+					},
+					{
+						"name" : "AK Central Beaufort shorelines 2004"
+					},
+					{
+						"name" : "AK Central Beaufort shorelines 2003"
+					},
+					{
+						"name" : "AK Central Beaufort shorelines 2001"
+					},
+					{
+						"name" : "AK Central Beaufort shorelines 1997"
+					},
+					{
+						"name" : "AK Central Beaufort shorelines 1947"
+					},
+					{
+						"name" : "AK East Beaufort shorelines 2003"
+					},
+					{
+						"name" : "AK East Beaufort shorelines 1947"
+					}				
+				]
+			},
+			{
+				"name" : "Washington",
+				"includeLayers" : [
+					{
+						"name" : "WA shorelines 2002"
+					},
+					{
+						"name" : "WA shorelines 1999"
+					},
+					{
+						"name" : "WA shorelines 1995"
+					},
+					{
+						"name" : "WA shorelines 1988"
+					},
+					{
+						"name" : "WA shorelines 1987"
+					},
+					{
+						"name" : "WA shorelines 1986"
+					},
+					{
+						"name" : "WA shorelines 1974"
+					},
+					{
+						"name" : "WA shorelines 1967"
+					},
+					{
+						"name" : "WA shorelines 1963"
+					},
+					{
+						"name" : "WA shorelines 1955"
+					},
+					{
+						"name" : "WA shorelines 1954"
+					},
+					{
+						"name" : "WA shorelines 1951"
+					},
+					{
+						"name" : "WA shorelines 1950"
+					},
+					{
+						"name" : "WA shorelines 1931"
+					},
+					{
+						"name" : "WA shorelines 1930"
+					},
+					{
+						"name" : "WA shorelines 1929"
+					},
+					{
+						"name" : "WA shorelines 1927"
+					},
+					{
+						"name" : "WA shorelines 1926"
+					},
+					{
+						"name" : "WA shorelines 1887"
+					},
+					{
+						"name" : "WA shorelines 1886"
+					},
+					{
+						"name" : "WA shorelines 1873"
+					},
+					{
+						"name" : "WA shorelines 1872"
+					},
+					{
+						"name" : "WA shorelines 1871"
+					},
+					{
+						"name" : "WA shorelines 1869"
+					}				
+				]
+			},
+			{
+				"name" : "Oregon",
+				"includeLayers" : [
+					{
+						"name" : "OR shorelines 2002"
+					},
+					{
+						"name" : "OR shorelines 1999"
+					},
+					{
+						"name" : "OR shorelines 1980"
+					},
+					{
+						"name" : "OR shorelines 1979"
+					},
+					{
+						"name" : "OR shorelines 1977"
+					},
+					{
+						"name" : "OR shorelines 1976"
+					},
+					{
+						"name" : "OR shorelines 1975"
+					},
+					{
+						"name" : "OR shorelines 1974"
+					},
+					{
+						"name" : "OR shorelines 1971"
+					},
+					{
+						"name" : "OR shorelines 1969"
+					},
+					{
+						"name" : "OR shorelines 1967"
+					},
+					{
+						"name" : "OR shorelines 1955"
+					},
+					{
+						"name" : "OR shorelines 1954"
+					},
+					{
+						"name" : "OR shorelines 1952"
+					},
+					{
+						"name" : "OR shorelines 1951"
+					},
+					{
+						"name" : "OR shorelines 1949"
+					},
+					{
+						"name" : "OR shorelines 1948"
+					},
+					{
+						"name" : "OR shorelines 1947"
+					},
+					{
+						"name" : "OR shorelines 1943"
+					},
+					{
+						"name" : "OR shorelines 1928"
+					},
+					{
+						"name" : "OR shorelines 1927"
+					},
+					{
+						"name" : "OR shorelines 1926"
+					},
+					{
+						"name" : "OR shorelines 1925"
+					},
+					{
+						"name" : "OR shorelines 1924"
+					},
+					{
+						"name" : "OR shorelines 1890"
+					},
+					{
+						"name" : "OR shorelines 1889"
+					},
+					{
+						"name" : "OR shorelines 1888"
+					},
+					{
+						"name" : "OR shorelines 1887"
+					},
+					{
+						"name" : "OR shorelines 1886"
+					},
+					{
+						"name" : "OR shorelines 1883"
+					},
+					{
+						"name" : "OR shorelines 1882"
+					},
+					{
+						"name" : "OR shorelines 1875"
+					},
+					{
+						"name" : "OR shorelines 1874"
+					},
+					{
+						"name" : "OR shorelines 1872"
+					},
+					{
+						"name" : "OR shorelines 1870"
+					},
+					{
+						"name" : "OR shorelines 1869"
+					},
+					{
+						"name" : "OR shorelines 1868"
+					}				
+				]
+			},
+			{
+				"name" : "California",
+				"includeLayers" : [
+					{
+						"name" : "Northern California",
+						"includeAllLayers" : true
+					},
+					{
+						"name" : "Central California",
+						"includeAllLayers" : true
+					},
+					{
+						"name" : "Southern California",
+						"includeAllLayers" : true
+					}
+				]
+			},
+			{
+				"name" : "Hawaii",
+				"includeLayers" : [
+					{
+						"name" : "Kauai Island",
+						"includeAllLayers" : true
+					},
+					{
+						"name" : "Oahu Island",
+						"includeAllLayers" : true
+					},
+					{
+						"name" : "Maui Island",
+						"includeAllLayers" : true
+					}
+				]
+			}
+		]
+	},
     {
         "displayName": "FEMA Coastal Flood Hazards",
         "server": {
             "type": "ags",
             "layerType": "dynamic",
-            "url": "http://regions.services.femadata.com/arcgis/rest/services/FEMA_R4/"
+            "url": "http://regions.services.femadata.com/arcgis/rest/services/FEMA_R4/",
+			"name"  : "FEMA_Region_IV_Coastal_Flood_Loss_Atlas_CFLA_Version_301"
         },
-        "includeLayers": [
-            {
-                "server": {
-                    "name": "FEMA_Region_IV_Coastal_Flood_Loss_Atlas_CFLA_Version_301"
-                },
-                "name": "CFLA Data",
-                "displayName": "Coastal Flood Loss Atlas",
-                "includeLayers": [
-                    {
-                        "name": "Building Loss Ratio",
-                        "includeAllLayers": true
-                    },
-                    {
-                        "name": "Debris in Tons",
-                        "includeAllLayers": true
-                    },
-                    {
-                        "name": "Debris in Truck Loads",
-                        "includeAllLayers": true
-                    },
-                    {
-                        "name": "Short Term Shelter Population",
-                        "includeAllLayers": true
-                    },
-                    {
-                        "name": "Per Capita Loss",
-                        "includeAllLayers": true
-                    },
-                    {
-                        "name": "Maximum Surge Depth (Ft)",
-                        "includeAllLayers": true
-                    },
-                    {
-                        "name": "SLOSH Basin Counties"
-                    }
-                ]    
-            }
-        ]
-    }
+		"name": "CFLA Data",
+		"includeLayers" : [
+			{
+			"displayName": "Coastal Flood Loss Atlas",
+			"includeLayers": [
+					{
+						"name": "Building Loss Ratio",
+						"includeAllLayers": true
+					},
+					{
+						"name": "Debris in Tons",
+						"includeAllLayers": true
+					},
+					{
+						"name": "Debris in Truck Loads",
+						"includeAllLayers": true
+					},
+					{
+						"name": "Short Term Shelter Population",
+						"includeAllLayers": true
+					},
+					{
+						"name": "Per Capita Loss",
+						"includeAllLayers": true
+					},
+					{
+						"name": "Maximum Surge Depth (Ft)",
+						"includeAllLayers": true
+					},
+					{
+						"name": "SLOSH Basin Counties"
+					}
+				]
+			}
+		]
+	}
 ]
