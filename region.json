@@ -43,7 +43,6 @@
     ],
     "pluginOrder": [
         "regional-planning",
-        "layer_selector",
         "risk_explorer",
         "zoom_to",
         "measure",
