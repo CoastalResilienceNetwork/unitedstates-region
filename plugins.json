@@ -1,12 +1,12 @@
 {
     "plugins": [
-        {
-	    	"repo": "explorer",
-            "name": "risk_explorer"
-        },
-    {
-      "repo": "map-tree",
-      "name": "layer_selector"
+		{
+			"repo": "explorer",
+			"name": "risk_explorer"
+		},
+		{
+			"repo": "regional-planning",
+			"name": "regional-planning"
         }
     ]
 }

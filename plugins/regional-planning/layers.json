@@ -1,0 +1,104 @@
+[
+    {
+        "displayName": "US Census",
+        "server": {
+            "type": "ags",
+            "layerType": "dynamic",
+            "url": "http://services.coastalresilience.org/arcgis/rest/services/US/",
+            "name": "United_States",
+            "reportGpUrl": "http://services.coastalresilience.org/arcgis/rest/services/DrawAndReport/getDrawAndReportDataMultiUnits/GPServer/getDrawAndReportDataMultiUnits",
+            "reportDbPath": "coastalresilience.gdb" 
+        },
+        "includeLayers": [
+            {
+                "name": "Social and Economic",
+                "includeLayers": [
+					{
+						"name" : "Blockgroup Outline",
+						"opacity" : 0.75
+					},
+					{
+						"name" : "Population",
+						"opacity" : 0.75
+					},
+					{
+						"name" : "Population (ppl/sq mi)",
+						"opacity" : 0.75
+					},
+					{
+						"name" : "Children Under 5",
+						"opacity" : 0.75
+					},
+					{
+						"name" : "Children Under 5 (% of total pop)",
+						"opacity" : 0.75
+					},
+					{
+						"name" : "People Over 65",
+						"opacity" : 0.75
+					},
+					{
+						"name" : "People Over 65 (% of total pop)",
+						"opacity" : 0.75
+					},
+					{
+						"name" : "Families in Poverty",
+						"opacity" : 0.75
+					},
+					{
+						"name" : "Families in Poverty (% of total families)",
+						"opacity" : 0.75
+					},
+					{
+						"name" : "Median Owner-Occupied Home Value (1,000s of USD)",
+						"opacity" : 0.75
+					}
+				]
+            }
+        ]
+    },
+    {
+        "displayName": "FEMA Coastal Flood Hazards",
+        "server": {
+            "type": "ags",
+            "layerType": "dynamic",
+            "url": "http://regions.services.femadata.com/arcgis/rest/services/FEMA_R4/",
+			"name"  : "FEMA_Region_IV_Coastal_Flood_Loss_Atlas_CFLA_Version_301"
+        },
+		"name": "CFLA Data",
+		"includeLayers" : [
+			{
+			"displayName": "Coastal Flood Loss Atlas",
+			"includeLayers": [
+					{
+						"name": "Building Loss Ratio",
+						"includeAllLayers": true
+					},
+					{
+						"name": "Debris in Tons",
+						"includeAllLayers": true
+					},
+					{
+						"name": "Debris in Truck Loads",
+						"includeAllLayers": true
+					},
+					{
+						"name": "Short Term Shelter Population",
+						"includeAllLayers": true
+					},
+					{
+						"name": "Per Capita Loss",
+						"includeAllLayers": true
+					},
+					{
+						"name": "Maximum Surge Depth (Ft)",
+						"includeAllLayers": true
+					},
+					{
+						"name": "SLOSH Basin Counties"
+					}
+				]
+			}
+		]
+	}
+]
